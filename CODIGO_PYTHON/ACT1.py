@@ -1,2 +1,1 @@
-print("gaaaa")
-print("hola")
+print("holadmlkanansa")

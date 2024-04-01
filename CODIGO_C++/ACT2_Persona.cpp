@@ -1,5 +1,5 @@
 #include <iostream>
-#include "persona.h"
+#include "persona.h" //Incluimos el archivo "persona.h"
 using namespace std;
 
 int main() {

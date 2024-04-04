@@ -51,9 +51,9 @@ public:
 void Biblioteca::prestarLibro(Libro &libro) {
     if (!libro.estaPrestado()) {
         libro.marcarPrestado();
-        cout << "Se ha prestado el libro: " << libro.obtenerTitulo() << endl;
+        cout<<"Se ha prestado el libro: "<<libro.obtenerTitulo()<<endl;
     } else {
-        cout << "El libro " << libro.obtenerTitulo() << " ya esta prestado." << endl;
+        cout<<"El libro "<<libro.obtenerTitulo()<<" ya esta prestado."<<endl;
     }
 }
 
@@ -61,9 +61,9 @@ void Biblioteca::prestarLibro(Libro &libro) {
 void Biblioteca::devolverLibro(Libro &libro) {
     if (libro.estaPrestado()) {
         libro.marcarDevuelto();
-        cout << "Se ha devuelto el libro: " << libro.obtenerTitulo() << endl;
+        cout<<"Se ha devuelto el libro: "<<libro.obtenerTitulo()<<endl;
     } else {
-        cout << "El libro " << libro.obtenerTitulo() << " no estaba prestado." << endl;
+        cout<<"El libro "<<libro.obtenerTitulo()<<" no estaba prestado."<<endl;
     }
 }
 

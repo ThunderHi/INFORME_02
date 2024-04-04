@@ -6,15 +6,15 @@ class Animal:
         self.edad = edad
         self.tipo = tipo
 
-    #Método para alimentar
+    #Metodo para alimentar
     def alimentar(self):
         print(self.nombre, "está siendo alimentado.")
 
-    #Motodo para hacer un sonido
+    #Metodo para hacer un sonido
     def hacer_sonido(self):
         print(self.nombre, "hace un sonido característico.")
 
-    #Motodo para mostrar la edad que tiene el animal
+    #Metodo para mostrar la edad que tiene el animal
     def mostrar_edad(self):
         print(self.nombre, "tiene", self.edad, "años.")
 
@@ -34,7 +34,7 @@ gato.alimentar()
 gato.hacer_sonido()
 gato.mostrar_edad()
 
-#Interaccion con el pájaro
+#Interaccion con el pajaro
 pajaro.alimentar()
 pajaro.hacer_sonido()
 pajaro.mostrar_edad()

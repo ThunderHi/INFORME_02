@@ -34,7 +34,7 @@ public:
 
 
 int main() {
-    //Creación de objetos de la clase Animal
+    //Creacion de objetos de la clase Animal
     Animal perro("Puchito", 7, "Perro");
     Animal gato("Dieguito", 4, "Gato");
     Animal pajaro("Piquito", 2, "Pájaro");

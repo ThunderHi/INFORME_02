@@ -21,7 +21,7 @@ public:
         cout<<nombre<<" esta siendo alimentado."<<endl;
     }
 
-    //Metodo oara que haga un sonido
+    //Metodo para que haga un sonido
     void hacer_sonido() {
         cout<<nombre<<" hace un sonido caracteristico."<<endl;
     }

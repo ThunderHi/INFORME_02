@@ -50,10 +50,10 @@ public:
 void Factura::agregarProducto(Producto &producto) {
     if (numProductos < MAX_PRODUCTOS) {
         listaProductos[numProductos] = &producto;
-        cout << "Producto agregado a la factura: " << producto.obtenerNombre() << endl;
+        cout<<"Producto agregado a la factura: "<<producto.obtenerNombre()<<endl;
         numProductos++;
     } else {
-        cout << "No se pueden agregar mas productos, limite alcanzado." << endl;
+        cout<<"No se pueden agregar mas productos, limite alcanzado."<<endl;
     }
 }
 

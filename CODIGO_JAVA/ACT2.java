@@ -9,13 +9,13 @@ public class Main {
     }
 
     public static double menor(double num1, double num2, double num3) {
-        double menor = num1; // Asumimos que el primer número es el menor inicialmente
+        double menor = num1; //Asumimos que el primer número es el menor inicialmente
 
         if (num2 < menor) {
-            menor = num2; // Si el segundo número es menor, lo actualizamos
+            menor = num2; //Si el segundo número es menor, lo actualizamos
         }
         if (num3 < menor) {
-            menor = num3; // Si el tercer número es menor, lo actualizamos
+            menor = num3; //Si el tercer número es menor, lo actualizamos
         }
 
         return menor; // Devolvemos el menor número encontrado

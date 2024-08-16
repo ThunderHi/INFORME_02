@@ -1,39 +1,16 @@
-public class Animal {
-    // Atributos
-    private String nombre;
-    private int edad;
-    private String tipo;
-
-    // Constructor
-    public Animal(String nombre, int edad, String tipo) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.tipo = tipo;
-    }
-
-    // Método para alimentar al animal
-    public void alimentar() {
-        System.out.println("El animal " + nombre + " está comiendo.");
-    }
-
-    // Método para hacer sonidos
-    public void hacerSonido() {
-        System.out.println("El animal " + nombre + " está haciendo un sonido.");
-    }
-
-    // Método principal para probar la clase
+class Dado {
     public static void main(String[] args) {
-        // Crear objetos para representar diferentes animales
-        Animal perro = new Animal("Puchito", 7, "Perro");
-        Animal pájaro = new Animal("Piquito", 2, "Pájaro");
+        int[] frecuencias = new int[6];
 
-        // Interactuar con los animales llamando a los métodos correspondientes
-        perro.alimentar();
-        perro.hacerSonido();
-        System.out.println("La edad de " + perro.nombre + " es " + perro.edad + " años.");
-        
-        pájaro.alimentar();
-        pájaro.hacerSonido();
-        System.out.println("La edad de " + pájaro.nombre + " es " + pájaro.edad + " años.");
+        int lanzamientos = 20000;
+
+        for (int i = 0; i < lanzamientos; i++) {
+            int resultado = (int)(Math.random() * 6) + 1;
+            frecuencias[resultado - 1]++;
+        }
+
+        for (int i = 0; i < frecuencias.length; i++) {
+            System.out.println("Cara " + (i + 1) + ": " + frecuencias[i] + " veces");
+        }
     }
 }
